@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import HeaderBackground from "@/components/header-background";
-import Header from "@/components/header";
+import Header from "@/components/main-header/header";
 
 export const metadata: Metadata = {
   title: "Foodie-Meals",
@@ -16,7 +15,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <HeaderBackground />
         <Header />
         {children}
       </body>
