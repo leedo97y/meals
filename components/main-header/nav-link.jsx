@@ -4,7 +4,7 @@ import Link from "next/link";
 import classes from "./nav-link.module.css";
 import { usePathname } from "next/navigation";
 
-const NavLinkPart = ({ href, children }: any) => {
+const NavLinkPart = ({ href, children }) => {
   const path = usePathname();
 
   return (

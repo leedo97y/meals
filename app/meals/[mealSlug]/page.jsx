@@ -1,4 +1,4 @@
-const MealsDetailPage = ({ params }: any) => {
+const MealsDetailPage = ({ params }) => {
   return (
     <main>
       <h1>Meals Detail Page</h1>

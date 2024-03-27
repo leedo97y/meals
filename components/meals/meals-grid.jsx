@@ -1,11 +1,10 @@
-import { Key } from "react";
 import classes from "./meals-grid.module.css";
 import MealsItem from "./meals-item";
 
-const MealsGrid = ({ meals }: any) => {
+const MealsGrid = ({ meals }) => {
   return (
     <ul className={classes.meals}>
-      {meals.map((meal: { id: Key | null | undefined }) => {
+      {meals.map((meal) => {
         <li key={meal.id}>
           <MealsItem {...meal} />
         </li>;

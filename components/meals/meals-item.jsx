@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import classes from "./meals-item.module.css";
 
-const MealsItem = ({ title, slug, image, summary, creator }: any) => {
+const MealsItem = ({ title, slug, image, summary, creator }) => {
   return (
     <article className={classes.meal}>
       <header>

@@ -1,6 +1,6 @@
 "use client";
 
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import classes from "./image-slides.module.css";
 import burgerImg from "@/assets/burger.jpg";
 import curryImg from "@/assets/curry.jpg";
@@ -11,12 +11,7 @@ import schnitzelImg from "@/assets/schnitzel.jpg";
 import tomatoSaladImg from "@/assets/tomato-salad.jpg";
 import { useEffect, useState } from "react";
 
-interface ImageProps {
-  image: StaticImageData;
-  alt: string;
-}
-
-const images: ImageProps[] = [
+const images = [
   { image: burgerImg, alt: "A delicious, juicy burger" },
   { image: curryImg, alt: "A delicious, spicy curry" },
   { image: dumplingsImg, alt: "Steamed dumplings" },
